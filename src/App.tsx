@@ -27,7 +27,7 @@ const page = () => {
 
   
   return (
-    <div className="flex flex-col md:flex-row px-[5%]  md:justify-start md:items-start md:px-[10%] py-[10%] bg-gray-600 md:h-screen h-screen">
+    <div className="flex flex-col md:flex-row px-[5%]  md:justify-start md:items-start md:px-[10%] justify-center items-center bg-gray-600 md:h-screen h-screen">
       <Bet setIncluded={setIncluded} bet={bet} setBet={setBet} minesRatio={minesRatio} setMinesRatio={setMinesRatio} generateDiamondsAndMinesArray={generateDiamondsAndMinesArray}/>
       <Mines diamonds={diamond} included={included} bet={bet} setBet={setBet} setIncluded={setIncluded} setDiamonds={setDiamond} minesRatio={minesRatio} setMinesRatio={()=>setMinesRatio} generateDiamondsAndMinesArray={generateDiamondsAndMinesArray}/>
     </div>
