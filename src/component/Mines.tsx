@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState ,Dispatch,SetStateAction} from "react"
+import { useEffect,Dispatch,SetStateAction} from "react"
 import { IoDiamond } from "react-icons/io5";
 import { FaBomb } from "react-icons/fa6";
 interface Mines{
