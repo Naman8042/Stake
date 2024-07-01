@@ -46,7 +46,7 @@ const Mines = ({minesRatio,setDiamonds,diamonds,generateDiamondsAndMinesArray,in
 
 
   return (
-    <div className="md:w-[75%] h-full p-5 md:p-0 mt-[5%] md:mt-0 flex bg-gray-700 justify-center items-center rounded-r-md">
+    <div className="md:w-[75%] md:h-full  p-5 md:p-0 mt-[5%] md:mt-0 flex bg-gray-700 justify-center items-center rounded-r-md">
       <div className="grid grid-cols-4 gap-2 ">
         {diamonds.map((item, index) => (
           included.includes(index) ? (
