@@ -29,7 +29,7 @@ const Bet = ({ minesRatio, bet, setMinesRatio, setBet, setIncluded, generateDiam
   }, [minesRatio])
 
   return (
-    <div className="md:w-[25%] w-80 h-full flex flex-col p-2 bg-gray-500 py-10 rounded-l-md">
+    <div className="md:w-[25%] w-80 h-[50%] flex flex-col p-2 bg-gray-500 py-10 rounded-l-md">
       <h1 className="text-white text-center text-xl">Mines</h1>
       <input type="number" value={String(minesRatio)} className="p-1 outline-none bg-gray-800 text-white py-2 rounded-md" onChange={onChangeHandler} />
       <br />
