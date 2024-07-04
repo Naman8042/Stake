@@ -7,15 +7,16 @@ interface Mines {
   generateDiamondsAndMinesArray: () => string[],
   setIncluded: Dispatch<SetStateAction<number[]>>,
   bet: String,
-  setBet: Dispatch<SetStateAction<String>>
+  setBet: Dispatch<SetStateAction<String>>,
+  setGrid:()=>void
 }
 
-const Bet = ({ minesRatio, bet, setMinesRatio, setBet, setIncluded, generateDiamondsAndMinesArray }: Mines) => {
+const Bet = ({ minesRatio, bet,setGrid, setMinesRatio, setIncluded, generateDiamondsAndMinesArray }: Mines) => {
+  
   function Restart(): void {
-    setBet("Bet")
-    let arr1: number[] = [];
-    setIncluded(arr1)
-    generateDiamondsAndMinesArray()
+    setIncluded([])
+    setGrid()
+ 
   }
 
   function onChangeHandler(e: any) {

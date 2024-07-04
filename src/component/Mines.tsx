@@ -9,21 +9,18 @@ interface Mines{
     included: number[]
     diamonds:String[]
     setIncluded : Dispatch<SetStateAction<number[]>>
-    setDiamonds : Dispatch<SetStateAction<String[]>>
+    setDiamond : Dispatch<SetStateAction<String[]>>
     bet:String,
     setBet:Dispatch<SetStateAction<String>>
 }
 
 
-const Mines = ({minesRatio,setDiamonds,diamonds,generateDiamondsAndMinesArray,included,setIncluded}:Mines) => {
+const Mines = ({minesRatio,setDiamond,diamonds,generateDiamondsAndMinesArray,included,setIncluded}:Mines) => {
 
     
     const size:number = 16
-   useEffect(()=>{
-    const Grid = generateDiamondsAndMinesArray()
-    setDiamonds(Grid)
-   },[minesRatio])
-  
+    
+   
 
   
   
