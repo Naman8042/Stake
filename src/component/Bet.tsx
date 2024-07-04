@@ -34,7 +34,7 @@ const Bet = ({ minesRatio, bet,setGrid, setMinesRatio, setIncluded, generateDiam
       <h1 className="text-white text-center text-xl">Mines</h1>
       <input type="number" value={String(minesRatio)} className="p-1 outline-none bg-gray-800 text-white py-2 rounded-md" onChange={onChangeHandler} />
       <br />
-      <button onClick={Restart} className="bg-lime-400 text-center w-56 py-1.5 rounded-md w-full">{bet}</button>
+      <button onClick={Restart} className="bg-lime-400 text-center py-1.5 rounded-md w-full">{bet}</button>
     </div>
   )
 }

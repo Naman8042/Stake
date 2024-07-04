@@ -1,5 +1,5 @@
 "use client"
-import { useEffect,Dispatch,SetStateAction} from "react"
+import {Dispatch,SetStateAction} from "react"
 import { IoDiamond } from "react-icons/io5";
 import { FaBomb } from "react-icons/fa6";
 interface Mines{
@@ -15,7 +15,7 @@ interface Mines{
 }
 
 
-const Mines = ({minesRatio,setDiamond,diamonds,generateDiamondsAndMinesArray,included,setIncluded}:Mines) => {
+const Mines = ({diamonds,included,setIncluded}:Mines) => {
 
     
     const size:number = 16
